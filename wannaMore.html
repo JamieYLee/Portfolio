@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jamie in Coding Temple</title>
+    <style>
+      * {margin: 0; padding: 0;}
+      body {background-color: #ddd;}
+      header {
+        text-align: center;
+        width: 98%;
+        margin: 9px auto;
+        padding: 35px 0;
+        background-color: rgba(255,255,255,0.7);
+      }
+      nav {
+        background-color: #333;
+        width: 100%;
+        overflow: auto;
+      }
+      nav ul {margin: 0 10px;}
+      nav ul li {
+        float: left;
+        list-style: none;
+        padding: 10px;
+        font-size: 18px;
+      }
+      nav a {text-decoration: none; color: #fff;}
+      nav a:hover {color: #ccc;}
+      #more {float: right;}
+
+      #container {margin: 0 auto; text-align: center;}
+      #container h3 {margin: 30px 0; color: navy;}
+      #container label {
+        font-size: 20px;
+      }
+      #container input {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        width: 65%;
+        height: 25px;
+        padding: 5px;
+      }
+      #container textarea {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        width: 65%;
+        height: 150px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+      <header>
+        <h1>Jamie Lee</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Coding Temple</a></li>
+          <li><a href="aboutMe.html">About Me</a></li>
+          <li><a href="myHobbies.html">My Hobbies</a></li>
+          <li id="more"><a href="wannaMore.html">Wanna More?</a></li>
+        </ul>
+      </nav>
+      <div id="container">
+        <h3>If you have any other further questions, please let me know!</h3>
+        <form action="./confirmed.html" method="post">
+          <label for="name">Name</label><br>
+          <input type="text" name="name" id="name"><br>
+          <label for="email">Email</label><br>
+          <input type="email" name="email" id="email"><br>
+          <label for="comment">* Comment</label><br>
+          <textarea name="comment" id="comment" required></textarea>
+          <input type="submit" value="SUBMIT" id="submit" name="submit">
+        </form>
+      </div>
+  </body>
+</html>

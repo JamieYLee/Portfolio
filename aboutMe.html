@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jamie in Coding Temple</title>
+    <style>
+      * {margin: 0; padding: 0;}
+      body {
+        background: #c6f5ff;
+background: -moz-linear-gradient(top, #c6f5ff 0%, #dcceef 39%, #ffd6ed 100%);
+      }
+      header {
+        text-align: center;
+        width: 98%;
+        margin: 9px auto;
+        padding: 35px 0;
+        background-color: rgba(255,201,240,0.2);
+        border-radius: 9px;
+        color: #DBA091;
+        font-family: 'Bradley Hand ITC';
+        font-weight: bold;
+      }
+      nav {
+        background-color: #9FA6CC;
+        width: 100%;
+        overflow: auto;
+        font-family: 'Bradley Hand ITC';
+      }
+      nav ul {margin: 0 10px;}
+      nav ul li {
+        float: left;
+        list-style: none;
+        padding: 10px;
+        font-size: 18px;
+      }
+      nav a {text-decoration: none; color: #F1EEF2; transition: color 0.2s ease;}
+      nav a:hover {color: #E4B2B2;}
+      #more {float: right;}
+
+      #container {
+        font-family:fantasy;
+        color: #555;
+      }
+
+      #main_column {float: left; width: 77%;}
+      .section {
+        background-color: rgba(250, 250, 250, 0.3);
+        width: 95%;
+        margin: 15px auto;
+        padding: 10px;
+        border-radius: 12px;
+      }
+      .section h2 {
+        font-family: 'Bradley Hand ITC';
+        font-weight: bold;
+        color: #E498A5;
+        font-size: 30px;
+      }
+      .section p {margin: 12px;}
+      .section ul, ol {margin-left: 40px; margin-top: 10px;}
+      .section li {padding: 5px 0;}
+      .section img {display: block; margin: 10px auto;}
+      .section strong {color: #AC6D86;}
+      .section span {margin-left: 250px; font-weight: bolder;
+      font-size: 21px; color: #9FA6CC; font-family: 'Bradley Hand ITC';}
+
+      #img_container {
+        border: 10px solid #BCC8E8;
+        border-radius: 12px;
+        display: block;
+        width: 825px;
+        height: 350px;
+        margin: 20px auto;
+        overflow: hidden;
+        position: relative;
+      }
+      #img_container img {
+        position: absolute;
+        left: -8%;
+        top: -42%;
+      }
+
+      #side_column {float: left; width: 23%;}
+      .side_section {
+        width: 90%;
+        margin: 15px auto;
+        background-color: rgba(250, 250, 250, 0.3);
+        padding: 10px;
+        text-align: center;
+        line-height: 1.7;
+        border-radius: 12px;
+      }
+      .side_section h2 {
+        color: #9FA6CC;
+        font-family: 'Bradley Hand ITC';
+        font-weight: bolder;
+      }
+      .side_section a {
+        text-decoration: none;
+        color: #888;
+        transition: color 0.2s ease;
+      }
+      .side_section a:hover {
+        color: #E4B2B2;
+      }
+      .side_section ul {
+        list-style: none;
+        padding: 10px;
+      }
+      #me {
+        border-radius: 50%;
+        margin: 10px auto;
+        display: block;
+        border: 7px solid #9FA6CC;
+      }
+    </style>
+  </head>
+  <body>
+      <header>
+        <h1>Jamie Lee</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Coding Temple</a></li>
+          <li><a href="aboutMe.html">About Me</a></li>
+          <li><a href="myHobbies.html">My Hobbies</a></li>
+          <li id="more"><a href="wannaMore.html">Wanna More?</a></li>
+        </ul>
+      </nav>
+      <div id="container">
+        <div id="main_column">
+          <div class="section" id="first">
+            <h2>Basically</h2>
+            <p>
+              Born at October 30th 1995 in Seoul, South Korea still grown up there.
+              Lived in Seoul until Feburary 2018 and then just moved to Quincy, MA.
+            </p>
+          </div>
+          <div class="section" id="second">
+            <h2>School History</h2>
+            <p>Graduated all schools from elementary to university in Korea.</p>
+            <p>
+              Attended <strong>Seoul Women's University</strong> studying
+              <strong>Contents Design</strong> as a major and Multimedia Engineering
+              as a minor.
+            </p>
+            <p id="ps">
+              +) <strong>Contents Design</strong> is a major that learns computer science
+              and graphic design at the same time. Usually called as 'Digital Media'
+              in other universities in Korea.
+            </p>
+          </div>
+          <div class="section" id="third">
+            <h2>Overseas Experience</h2>
+            <ol>
+              <li>From June 2000 to January 2002 :
+              Used to live about One and a half years in Michigan U.S.</li>
+              <li>August 2002 : Italy trip (Rome, Venice)</li>
+              <li>August 2005 : Cebu, Philipines</li>
+              <li>July 2012 : Bangkok and Pattaya in Thai</li>
+              <li>Feburary 2015 : New Zealand trip (Aukland, Rotorua)</li>
+              <li>From June to July 2016 :
+              Attended university international program in Tokyo, Japan</li>
+              <li>July 2016 : Trip to Spain (Madrid, Toledo, San Sebastian, Bilbao)
+              and Biarritz, France</li>
+              <li>August 2017 : Visited Boston U.S.</li>
+              <li>January 2018 : Had a trip just by myself in Tokyo, Japan</li>
+              <li>Since Feburary 2018 : Moved to Quincy MA and still living here</li>
+            </ol>
+          </div>
+          <div class="section" id="fourth">
+            <h2>My Family</h2>
+            <div id="img_container">
+              <img src="img/family 2016 madrid.jpg" id="family"/>
+            </div>
+            <span>My family consists of four people - father, mother, brother and I</span>
+            <ul>
+              <li>My father is a professor teaching Mechanical Engineering in university and
+              having a sabbatical right now, so he's in here, too. He recommended me to
+              study somewhat computer stuff.
+              </li>
+              <li>
+                My mother is a pianist and also teaches students in graduate school.
+              </li>
+              <li>
+                Older brother-3 years older than me-studied Economics in undergraduate
+                in London, UK and masters degree about Big Data in Madrid, Spain. He is planning his own business
+                these days so traveling Serbia because of it right now.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="side_column">
+          <div class="side_section">
+            <img src="img/leej.jpg" id="me"/>
+            <h2>Jamie Yeonjung Lee</h2>
+            <p>10 / 30 / 1995</p>
+            <p>Love my hometown Seoul</p>
+            <p>Can speak Korean, English and Japanese</p>
+          </div>
+          <div class="side_section">
+            <h2>Shortcuts</h2>
+            <ul>
+              <li><a href="#first">Basically</a></li>
+              <li><a href="#second">School History</a></li>
+              <li><a href="#third">Overseas Experience</a></li>
+              <li><a href="#fourth">My Family</a></li>
+            </ul>
+          </div>
+          <div class="side_section">
+            <h2>Social Media</h2>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/jamie-lee-36b5a411a/">LinkedIn</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100008034032997">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
