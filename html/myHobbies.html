@@ -10,11 +10,13 @@
         width: 98%;
         margin: 9px auto;
         padding: 35px 0;
-        /*font-family: 'Metropolis 1920';*/
+        font-family: 'Metropolis 1920';
+        font-style: italic;
         color: indianred;
       }
       nav {
-        border: 2px solid indianred;
+        border-top: 2px solid indianred;
+        border-bottom: 2px solid indianred;
         width: 100%;
         overflow: auto;
       }
@@ -24,8 +26,10 @@
         list-style: none;
         padding: 10px;
         font-size: 18px;
+        font-family: 'Metropolis 1920';
+        color: #555;
       }
-      nav a {text-decoration: none; color: black; transition: opacity 0.2s ease;}
+      nav a {text-decoration: none; color: #777; transition: opacity 0.2s ease;}
       nav a:hover {opacity: 0.2;}
       #more {float: right;}
 
@@ -38,20 +42,33 @@
       .hobby {
         margin: 15px;
         border: 1px solid indianred;
-        width: 31%; height: 95%;
+        width: 31%; height: 360px;
         float: left;
+        position: relative;
         overflow: hidden;
         padding-bottom: 10px;
         transition: background-color 0.4s ease;
+        vertical-align: middle;
       }
       .hobby:hover {background-color: indianred;}
 
       .hobby h2 {
+        font-family: 'Ostrich Sans Heavy';
         text-align: center;
         margin: 18px auto;
         color: indianred;
       }
-      .hobby p {margin: 6px 0 6px 5px; color: #fffbf4;}
+      .hobby p {
+        margin: 6px 0 6px 5px;
+        color: #fffbf4;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
     </style>
   </head>
   <body>
@@ -60,10 +77,10 @@
       </header>
       <nav>
         <ul>
-          <li><a href="index.html">Coding Temple</a></li>
-          <li><a href="aboutMe.html">About Me</a></li>
-          <li><a href="myHobbies.html">My Hobbies</a></li>
-          <li id="more"><a href="wannaMore.html">Wanna More?</a></li>
+          <a href="../index.html"><li>Coding Temple</li></a>
+          <a href="aboutMe.html"><li>About Me</li></a>
+          <a href="myHobbies.html"><li>My Hobbies</li></a>
+          <a href="wannaMore.html"><li id="more">Wanna More?</li></a>
         </ul>
       </nav>
       <div id="container">
@@ -74,9 +91,7 @@
             traveling. From since when I was young, I was deeply interested in somewhat
             cultural anthropologic things and that led me to make dreams of traveling
             all around the world. So reading books of countries I wanna travel one day
-            just by myself such as Honk Kong, Singapore, Northwestern Europe, etc.
-          </p>
-          <p>
+            just by myself such as Honk Kong, Singapore, Northwestern Europe, etc.<br>
             &nbsp;Also, I'm quite interested in reading books of animals, especially pets.
             I love animals so wanna have it as my family but my parents really hate. So,
             beacuse of it, I'm just reading about them instead of having real one but
@@ -87,16 +102,12 @@
           <h2>Listening to Music</h2>
           <p>
             &nbsp;When I am happy, when I am sad, when I need some concentration, or either
-            when I need some my own time, anytime I need music with every kind of situations.
-          </p>
-          <p>
+            when I need some my own time, anytime I need music with every kind of situations.<br>
             &nbsp;Actually, I don't know the music well professionally, but anyway when I think of
             myself, probably I used to like kinda house music and electronic. Also,
             And Even more about instrumental musics. It can be from soundtracks from
             games, movies or even TV shows to originally composed in online like YouTube or
-            Soundcloud.
-          </p>
-          <p>
+            Soundcloud.<br>
             &nbsp;My favorite artists would be, for example, Owl City and Audiomachine.
             Owl City is usually for electronic,
             but the common thing is they're good at composing instrumentals.
@@ -106,58 +117,48 @@
           <h2>Learning Foreign Languages</h2>
           <p>
             &nbsp;I like global things like cultural anthropology or traveling around,
-            or even it can be used in languages.
-          </p>
-          <p>
+            or even it can be used in languages.<br>
             &nbsp;I already speak 3 languages - Korean, English, Japanese. Korean is my mother
             tongue, learned English since I was very young, and started to learn Japanese
             since when I was in high school. I think my Japanese is much more fluent than
-            my English. Well, just kidding.
-          </p>
-          <p>
+            my English. Well, just kidding.<br>
             &nbsp;And thinking of learning 3 more languages from now on like German, Chinese
             and Spanish. I already took basic German class when I was in college but wanna
             learn more personally. And Chinese and Spanish are beacuse I felt some necessity
             of learning those languages after arriving U.S.
           </p>
         </div>
-      </div>
-      <div class="hobby">
-        <h2>Watching Youtube</h2>
-        <p>
-          &nbsp;My best no.1 pastime nowdays. Subjects I watch is really diverse.
-          It can be about makeups, pet channels, cooking, learning languages (usually English),
-          or even just listening to music.
-        </p>
-        <p>
-          &nbsp;These days I'm really interested in searching and watching videos about DMV
-          just since after when I recently visited RMV. It really sucks, lol.
-        </p>
-      </div>
-      <div class="hobby">
-        <h2>Playing Games</h2>
-        <p>
-          &nbsp;I used to like playing games since when I was young, so until when I was in
-          college sophomore, I dreamed of being game developer.
-        </p>
-        <p>
-          &nbsp;Unfortunately, I lost most or my interests about games even though I made
-          a game for my graduate project, but still doing a video game on my laptop called
-          "The Sims 4". It's really cool for time killing.
-        </p>
-      </div>
-      <div class="hobby">
-        <h2>Walking around</h2>
-        <p>
-          &nbsp;When I lived in Korea, I really loved walking around my town alone, especially
-          in late night. Walking late gave me lots of silence and that made me much more
-          concentrated to myself.
-        </p>
-        <p>
-          It's really sad that I can't walk late in America because of danger. Anyway,
-          beacuse of my memory before, I really love walking in downtown filled with skyscrapers
-          and that makes me feel alive.
-        </p>
+        <div class="hobby">
+          <h2>Watching Youtube</h2>
+          <p>
+            &nbsp;My best no.1 pastime nowdays. Subjects I watch is really diverse.
+            It can be about makeups, pet channels, cooking, learning languages (usually English),
+            or even just listening to music.<br>
+            &nbsp;These days I'm really interested in searching and watching videos about DMV
+            just since after when I recently visited RMV. It really sucks, lol.
+          </p>
+        </div>
+        <div class="hobby">
+          <h2>Playing Games</h2>
+          <p>
+            &nbsp;I used to like playing games since when I was young, so until when I was in
+            college sophomore, I dreamed of being game developer.<br>
+            &nbsp;Unfortunately, I lost most or my interests about games even though I made
+            a game for my graduate project, but still doing a video game on my laptop called
+            "The Sims 4". It's really cool for time killing.
+          </p>
+        </div>
+        <div class="hobby">
+          <h2>Walking around</h2>
+          <p>
+            &nbsp;When I lived in Korea, I really loved walking around my town alone, especially
+            in late night. Walking late gave me lots of silence and that made me much more
+            concentrated to myself.<br>
+            It's really sad that I can't walk late in America because of danger. Anyway,
+            beacuse of my memory before, I really love walking in downtown filled with skyscrapers
+            and that makes me feel alive.
+          </p>
+        </div>
       </div>
   </body>
 </html>
