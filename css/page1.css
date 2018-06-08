@@ -1,0 +1,70 @@
+@import "basic.css";
+
+body {background-color: #ddd;}
+header {
+  padding: 0;
+  background-color: rgba(255,255,255,0.7);
+}
+
+main h2 {margin-left: 15px; font-size: 30px;}
+
+nav {
+  background-color: #333;
+  width: 100%;
+  overflow: auto;
+}
+
+nav ul {margin: 0 10px;}
+nav ul li {
+  float: left;
+  list-style: none;
+  padding: 5px;
+  font-size: 18px;
+}
+nav a {text-decoration: none; color: #fff;}
+nav a:hover {color: #ccc;}
+
+.section {
+  background-color: #eee;
+  margin: 15px 0 15px 40px;
+  padding: 10px;
+}
+.section p {margin: 12px;}
+.section ul {margin-left: 50px;}
+
+.side_section {
+  margin: 15px 0 15px 80px;
+  background-color: #eee;
+  padding-top: 10px;
+}
+.side_section a {
+  text-decoration: none;
+  color: #888;
+}
+.side_section ul li {
+  list-style: none;
+  margin: 10px;
+  line-height: 2;
+}
+#me {
+  border-radius: 50%;
+  margin: 10px auto;
+  display: block;
+  border: 7px solid #aaa;
+}
+
+#go {
+  max-width: 290px;
+}
+
+@media only screen and (max-width: 700px) {
+  * {margin: 0px;}
+  body {
+    background-color: #888;
+    color: navy;
+  }
+   img {
+    width: 8rem;
+    height: auto;
+  }
+}

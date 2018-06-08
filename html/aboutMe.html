@@ -2,217 +2,237 @@
 <html>
   <head>
     <title>Jamie in Coding Temple</title>
-    <style>
-      * {margin: 0; padding: 0;}
-      body {
-        background: #c6f5ff;
-background: -moz-linear-gradient(top, #c6f5ff 0%, #dcceef 39%, #ffd6ed 100%);
-      }
-      header {
-        text-align: center;
-        width: 98%;
-        margin: 9px auto;
-        padding: 35px 0;
-        background-color: rgba(255,201,240,0.2);
-        border-radius: 9px;
-        color: #DBA091;
-        font-family: 'Bradley Hand ITC';
-        font-weight: bold;
-      }
-      nav {
-        background-color: #9FA6CC;
-        width: 100%;
-        overflow: auto;
-        font-family: 'Bradley Hand ITC';
-      }
-      nav ul {margin: 0 10px;}
-      nav ul li {
-        float: left;
-        list-style: none;
-        padding: 10px;
-        font-size: 18px;
-      }
-      nav a {text-decoration: none; color: #F1EEF2; transition: color 0.2s ease;}
-      nav a:hover {color: #E4B2B2;}
-      #more {float: right;}
-
-      #container {
-        font-family:fantasy;
-        color: #555;
-      }
-
-      #main_column {float: left; width: 77%;}
-      .section {
-        background-color: rgba(250, 250, 250, 0.3);
-        width: 95%;
-        margin: 15px auto;
-        padding: 10px;
-        border-radius: 12px;
-      }
-      .section h2 {
-        font-family: 'Bradley Hand ITC';
-        font-weight: bold;
-        color: #E498A5;
-        font-size: 30px;
-      }
-      .section p {margin: 12px;}
-      .section ul, ol {margin-left: 40px; margin-top: 10px;}
-      .section li {padding: 5px 0;}
-      .section img {display: block; margin: 10px auto;}
-      .section strong {color: #AC6D86;}
-      .section span {margin-left: 230px; font-weight: bolder;
-        font-size: 25px; color: #9FA6CC; font-family: 'Bradley Hand ITC';}
-
-      /*#img_container {
-        border: 10px solid #BCC8E8;
-        border-radius: 12px;
-        display: block;
-        width: 825px;
-        height: 350px;
-        margin: 20px auto;
-        overflow: hidden;
-        position: relative;
-      }
-      #img_container img {
-        position: absolute;
-        left: -8%;
-        top: -42%;
-      }*/
-      #side_column {float: left; width: 23%;}
-      .side_section {
-        width: 90%;
-        margin: 15px auto;
-        background-color: rgba(250, 250, 250, 0.3);
-        padding: 10px;
-        text-align: center;
-        line-height: 1.7;
-        border-radius: 12px;
-      }
-      .side_section h2 {
-        color: #9FA6CC;
-        font-family: 'Bradley Hand ITC';
-        font-weight: bolder;
-      }
-      .side_section a {
-        text-decoration: none;
-        color: #888;
-        transition: color 0.2s ease;
-      }
-      .side_section a:hover {
-        color: #E4B2B2;
-      }
-      .side_section ul {
-        list-style: none;
-        padding: 10px;
-      }
-      #me {
-        border-radius: 50%;
-        margin: 10px auto;
-        display: block;
-        border: 7px solid #9FA6CC;
-      }
-    </style>
   </head>
   <body>
-      <header>
-        <h1>Jamie Lee</h1>
-      </header>
-      <nav>
-        <ul>
-          <a href="../index.html"><li>Coding Temple</li></a>
-          <a href="aboutMe.html"><li>About Me</li></a>
-          <a href="myHobbies.html"><li>My Hobbies</li></a>
-          <a href="wannaMore.html"><li id="more">Wanna More?</li></a>
-        </ul>
-      </nav>
-      <div id="container">
-        <div id="main_column">
-          <div class="section" id="first">
-            <h2>Basically</h2>
-            <p>
-              Born at October 30th 1995 in Seoul, South Korea still grown up there.
-              Lived in Seoul until Feburary 2018 and then just moved to Quincy, MA.
-            </p>
+    <div class="row">
+      <div class="col-md-12">
+        <header>
+          <div class="col-md-12">
+            <h1>Jamie Lee</h1>
           </div>
-          <div class="section" id="second">
-            <h2>School History</h2>
-            <p>Graduated all schools from elementary to university in Korea.</p>
-            <p>
-              Attended <strong>Seoul Women's University</strong> studying
-              <strong>Contents Design</strong> as a major and Multimedia Engineering
-              as a minor.
-            </p>
-            <p id="ps">
-              +) <strong>Contents Design</strong> is a major that learns computer science
-              and graphic design at the same time. Usually called as 'Digital Media'
-              in other universities in Korea.
-            </p>
-          </div>
-          <div class="section" id="third">
-            <h2>Overseas Experience</h2>
-            <ol>
-              <li>From June 2000 to January 2002 :
-              Used to live about One and a half years in Michigan U.S.</li>
-              <li>August 2002 : Italy trip (Rome, Venice)</li>
-              <li>August 2005 : Cebu, Philipines</li>
-              <li>July 2012 : Bangkok and Pattaya in Thai</li>
-              <li>Feburary 2015 : New Zealand trip (Aukland, Rotorua)</li>
-              <li>From June to July 2016 :
-              Attended university international program in Tokyo, Japan</li>
-              <li>July 2016 : Trip to Spain (Madrid, Toledo, San Sebastian, Bilbao)
-              and Biarritz, France</li>
-              <li>August 2017 : Visited Boston U.S.</li>
-              <li>January 2018 : Had a trip just by myself in Tokyo, Japan</li>
-              <li>Since Feburary 2018 : Moved to Quincy MA and still living here</li>
-            </ol>
-          </div>
-          <div class="section" id="fourth">
-            <h2>My Family</h2>
-            <!--<div id="img_container">
-              <img src="img/family 2016 madrid.jpg" id="family"/>
-            </div>-->
-            <span>My family consists of four people - father, mother, brother and I</span>
-            <ul>
-              <li>My father is a professor teaching Mechanical Engineering in university and
-              having a sabbatical right now, so he's in here, too. He recommended me to
-              study somewhat computer stuff.
-              </li>
-              <li>
-                My mother is a pianist and also teaches students in graduate school.
-              </li>
-              <li>
-                Older brother-3 years older than me-studied Economics in undergraduate
-                in London, UK and masters degree about Big Data in Madrid, Spain. He is planning his own business
-                these days so traveling Serbia because of it right now.
-              </li>
-            </ul>
+          <nav class="navbar navbar-expand-sm">
+          <!-- Links -->
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item">
+               <a class="nav-link" href="../index.html">Coding Temple</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">About Me</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="myHobbies.html">My Hobbies</a>
+             </li>
+           </ul>
+           <ul class="navbar-nav ml-auto">
+             <li class="nav-item push-right" id="more">
+               <a class="nav-link" href="wannaMore.html">Wanna More?</a>
+             </li>
+           </ul>
+          </nav>
+        </header>
+      </div> <!--end of col-md-12 row-->
+    </div> <!--end of nav-->
+
+      <main>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-9 col-sm-12 col-xs-12">
+              <div class="row">
+                <div class="col-md-12 section" id="first">
+                  <div class="row">
+                    <div class="col-sm-1 col-xs-1"></div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <h2>Basically</h2>
+                    </div>
+                    <div class="col-sm-1 col-xs-1"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>Born at October 30th 1995 in Seoul, South Korea still grown up there. Lived in Seoul until Feburary 2018 and then just moved to Quincy, MA.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 section" id="second">
+                  <div class="row">
+                    <div class="col-sm-1 col-xs-1"></div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <h2>School History</h2>
+                    </div>
+                    <div class="col-sm-1 col-xs-1"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>Graduated all schools from elementary to university in Korea. Attended <strong>Seoul Women's University</strong> studying <strong>Contents Design</strong> as a major and Multimedia Engineering as a minor.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p id="ps">
+                        <strong>Contents Design</strong> is a major that learns computer science and graphic design at the same time. Usually called as 'Digital Media' in other universities in Korea.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 section" id="third">
+                  <div class="row">
+                    <div class="col-sm-1 col-xs-1"></div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <h2>Overseas Experience</h2>
+                    </div>
+                    <div class="col-sm-1 col-xs-1"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ol>
+                        <li>
+                          From June 2000 to January 2002 : Used to live about One and a half years in Michigan U.S.
+                        </li>
+                        <li>
+                          August 2002 : Italy trip (Rome, Venice)
+                        </li>
+                        <li>
+                          August 2005 : Cebu, Philipines
+                        </li>
+                        <li>
+                          July 2012 : Bangkok and Pattaya in Thai
+                        </li>
+                        <li>
+                          Feburary 2015 : New Zealand trip (Aukland, Rotorua)
+                        </li>
+                        <li>
+                          From June to July 2016 : Attended university international program in Tokyo, Japan
+                        </li>
+                        <li>
+                          July 2016 : Trip to Spain (Madrid, Toledo, San Sebastian, Bilbao) and Biarritz, France
+                        </li>
+                        <li>
+                          August 2017 : Visited Boston U.S.
+                        </li>
+                        <li>
+                          January 2018 : Had a trip just by myself in Tokyo, Japan
+                        </li>
+                        <li>
+                          Since Feburary 2018 : Moved to Quincy MA and still living here
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 section" id="fourth">
+                  <div class="row">
+                    <div class="col-sm-1 col-xs-1"></div>
+                    <div class="col-md-12 col-sm-10 col-xs-10">
+                      <h2>My Family</h2>
+                    </div>
+                    <div class="col-sm-1 col-xs-1"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                      <span>My family consists of four people - father, mother, brother and I</span>
+                    </div>
+                    <div class="col-md-2"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ul>
+                        <li>My father is a professor teaching Mechanical Engineering in university and having a sabbatical right now, so he's in here, too. He recommended me to study somewhat computer stuff.</li>
+                        <li>My mother is a pianist and also teaches students in graduate school.</li>
+                        <li>Older brother-3 years older than me-studied Economics in undergraduate in London, UK and masters degree about Big Data in Madrid, Spain. He is planning his own business these days so traveling Serbia because of it right now.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-2 col-sm-12 col-xs-12">
+              <div class="row">
+                <div class="col-md-12 side_section">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <img src="../img/leej.jpg" alt="Image" id="me" class="center">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2>Jamie Yeonjung Lee</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>10 / 30 / 1995</p>
+                      <p>Love my hometown Seoul</p>
+                      <p>Can speak Korean, English and Japanese</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 side_section">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2>Shortcuts</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ul>
+                        <a href="#first"><li>Basically</li></a>
+                        <a href="#second"><li>School History</li></a>
+                        <a href="#third"><li>Overseas Experience</li></a>
+                        <a href="#fourth"><li>My Family</li></a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 side_section">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2>Social Media</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ul>
+                        <a href="https://www.linkedin.com/in/jamie-lee-36b5a411a/"><li>LinkedIn</li></a>
+                        <a href="https://www.facebook.com/profile.php?id=100008034032997"><li>Facebook</li></a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-        <div id="side_column">
-          <div class="side_section">
-            <img src="../img/leej.jpg" id="me"/>
-            <h2>Jamie Yeonjung Lee</h2>
-            <p>10 / 30 / 1995</p>
-            <p>Love my hometown Seoul</p>
-            <p>Can speak Korean, English and Japanese</p>
-          </div>
-          <div class="side_section">
-            <h2>Shortcuts</h2>
-            <ul>
-              <a href="#first"><li>Basically</li></a>
-              <a href="#second"><li>School History</li></a>
-              <a href="#third"><li>Overseas Experience</li></a>
-              <a href="#fourth"><li>My Family</li></a>
-            </ul>
-          </div>
-          <div class="side_section">
-            <h2>Social Media</h2>
-            <ul>
-              <a href="https://www.linkedin.com/in/jamie-lee-36b5a411a/"><li>LinkedIn</li></a>
-              <a href="https://www.facebook.com/profile.php?id=100008034032997"><li>Facebook</li></a>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </main>
+
+      <!-- Bootstrap 4.1.0 CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+      <!-- JQuery CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- AJAX CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+      <!-- Bootstrap JS CDN -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="../css/page2.css"/>
   </body>
 </html>

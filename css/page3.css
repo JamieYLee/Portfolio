@@ -1,0 +1,59 @@
+@import "basic.css";
+
+* {margin: 0; padding: 0;}
+body {background-color: #fffbf4;}
+header {
+  text-align: center;
+  width: 98%;
+  margin: 9px auto;
+  padding: 35px 0;
+  font-family: 'Metropolis 1920';
+  font-style: italic;
+  color: indianred;
+}
+nav {
+  border-top: 2px solid indianred;
+  border-bottom: 2px solid indianred;
+  width: 100%;
+  overflow: auto;
+}
+nav ul {margin: 0 10px;}
+nav ul li {
+  float: left;
+  list-style: none;
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Metropolis 1920';
+  color: #555;
+}
+nav a {text-decoration: none; color: #777; transition: opacity 0.2s ease;}
+nav a:hover {opacity: 0.2;}
+
+#odd .col-md:nth-child(even){
+  background-color: indianred;
+  color: #fff;
+  box-shadow: 0px 0px 5px 0px #fff;
+}
+
+#even .col-md:nth-child(odd){
+  background-color: indianred;
+  color: #fff;
+  box-shadow: 0px 0px 5px 0px #fff;
+}
+
+.card {
+  margin: 25px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 0px indianred;
+}
+
+.card-title {
+  text-align: center;
+  font-family: 'Ostrich Sans Heavy';
+}
+
+.card-img-top {
+  width: 70%;
+  margin: 5px auto;
+  height: auto;
+}

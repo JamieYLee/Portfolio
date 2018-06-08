@@ -2,147 +2,160 @@
 <html>
   <head>
     <title>Jamie in Coding Temple</title>
-    <style>
-      * {margin: 0; padding: 0;}
-      body {background-color: #ddd;}
-      header {
-        text-align: center;
-        width: 98%;
-        margin: 9px auto;
-        padding: 35px 0;
-        background-color: rgba(255,255,255,0.7);
-      }
-      nav {
-        background-color: #333;
-        width: 100%;
-        overflow: auto;
-      }
-      nav ul {margin: 0 10px;}
-      nav ul li {
-        float: left;
-        list-style: none;
-        padding: 10px;
-        font-size: 18px;
-      }
-      nav a {text-decoration: none; color: #fff;}
-      nav a:hover {color: #ccc;}
-      #more {float: right;}
-
-      #main_column {float: left; width: 77%;}
-      .section {
-        background-color: #eee;
-        width: 95%;
-        margin: 15px auto;
-        padding: 10px;
-      }
-      .section p {margin: 12px;}
-      .section ul {margin-left: 40px;}
-      .section img {display: block; margin: 10px auto;}
-
-      #side_column {float: left; width: 23%;}
-      .side_section {
-        width: 90%;
-        margin: 15px auto;
-        background-color: #eee;
-        padding: 10px;
-      }
-      .side_section a {
-        text-decoration: none;
-        color: #888;
-      }
-      .side_section ul {
-        list-style: none;
-        padding: 10px;
-        line-height: 2;
-      }
-      #me {
-        border-radius: 50%;
-        margin: 10px auto;
-        display: block;
-        border: 7px solid #aaa;
-      }
-    </style>
   </head>
   <body>
-      <header>
-        <h1>Jamie Lee</h1>
-      </header>
-      <nav>
-        <ul>
-          <a href="index.html"><li>Coding Temple</li></a>
-          <a href="html/aboutMe.html"><li>About Me</li></a>
-          <a href="html/myHobbies.html"><li>My Hobbies</li></a>
-          <a href="html/wannaMore.html"><li id="more">Wanna More?</li></a>
-        </ul>
-      </nav>
-      <div id="container">
-        <div id="main_column">
-          <div class="section" id="first">
-            <h2>Hello, Coding Temple!</h2>
-            <img src="img/coding_temple.png"/>
-            <p>
-              Hi guys! It's really nice to see you. Upcoming 10 weeks would be so tough, anyway hope that
-              we could finish this cohort well and achieve each one's goal!
-            </p>
+    <div class="row">
+      <div class="col-md-12">
+        <header>
+          <div class="col-md-12">
+            <h1>Jamie Lee</h1>
           </div>
-          <div class="section" id="second">
-            <h2>Reason Why I Wanna Become a Web Developer</h2>
-            <p>
-              As my major was about studying computer programming and graphic design at the same time,
-              most of students there get their jobs as a graphic designer.
-            </p>
-            <p>
-              However, my design skills were really poor, so decided to go to the programming field
-              but was same as design. For example, I got straight Cs from all kinds of C++ subjects.
-            </p>
-            <p>
-              But the only thing I enjoyed and got good grades at programming was about the
-              web front-end. So because of it, I decided to become a web developer, especially a
-              <strong>Front-End developer</strong> as my first job.
-            </p>
-          </div>
-          <div class="section" id="third">
-            <h2>My Backgrounds</h2>
-            <p>These are what I've learned from the university: </p>
-            <ul id="subject">
-              <li>C / C++</li>
-              <li>Java</li>
-              <li>UNIX</li>
-              <li>Android Studio</li>
-              <li>Database (MySQL)</li>
-              <li>HTML / CSS / Javascript</li>
-              <li>Processing</li>
-              <li>php</li>
-              <li>C# for Unity
-                <p> : made GPS based running game for graduate project at 2017<br>
-                  and now all forgot how did I make this! lol
+          <nav class="navbar navbar-expand-sm">
+          <!-- Links -->
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item">
+               <a class="nav-link" href="#">Coding Temple</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="html/aboutMe.html">About Me</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="html/myHobbies.html">My Hobbies</a>
+             </li>
+           </ul>
+           <ul class="navbar-nav ml-auto">
+             <li class="nav-item push-right" id="more">
+               <a class="nav-link" href="html/wannaMore.html">Wanna More?</a>
+             </li>
+           </ul>
+          </nav>
+        </header>
+      </div> <!--end of col-md-12 row-->
+    </div> <!--end of nav-->
+
+    <main>
+      <div class="row">
+        <div class="col-md-9 col-sm-12 col-xs-6">
+          <div class="row">
+            <div class="col-md-12 section" id="first">
+              <div class="row">
+                <h2>Hello, Coding Temple!</h2>
+              </div>
+              <div class="row">
+                <img src="img/coding_temple.png" class="center" alt="Image" id="temple"/>
+              </div>
+              <div class="row">
+                <p>Hi guys! It's really nice to see you. Upcoming 10 weeks would be so tough, anyway hope that we could finish this cohort well and achieve each one's goal!</p>
+              </div>
+            </div>
+          </div> <!--end of 1st row-->
+          <div class="row">
+            <div class="col-md-12 section" id="second">
+              <div class="row">
+                <h2>Reason Why I Wanna Become a Web Developer</h2>
+              </div>
+              <div class="row">
+                <p>
+                  As my major was about studying computer programming and graphic design at the same time, most of students there get their jobs as a graphic designer.<br>
+                  However, my design skills were really poor, so decided to go to the programming field but was same as design. For example, I got straight Cs from all kinds of C++ subjects.<br>
+                  But the only thing I enjoyed and got good grades at programming was about the web front-end. So because of it, I decided to become a web developer, especially a <strong>Front-End developer</strong> as my first job.
                 </p>
-              </li>
-            </ul>
+              </div>
+            </div>
+          </div> <!--end of 2nd row-->
+          <div class="row">
+            <div class="col-md-12 section" id="third">
+              <div class="row">
+                <h2>My Backgrounds</h2>
+              </div>
+              <div class="row">
+                <p>These are what I've learned from the university: </p>
+              </div>
+              <div class="row">
+                  <ul id="subject">
+                      <li>C / C++</li>
+                      <li>Java</li>
+                      <li>UNIX</li>
+                      <li>Android Studio</li>
+                      <li>Database (MySQL)</li>
+                      <li>HTML / CSS / Javascript</li>
+                      <li>Processing</li>
+                      <li>php</li>
+                      <li>C# for Unity
+                        <p> : made GPS based running game for graduate project at 2017<br>
+                          and now all forgot how did I make this! lol
+                        </p>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div> <!--end of 3rd row-->
+          <div class="col-md-2 col-sm-12 col-xs-6">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-6 side_section">
+                <div class="row">
+                  <h2>Me?</h2>
+                </div>
+                <div class="row">
+                  <a href="html/aboutMe.html" class="center"><img src="img/leej.jpg" alt="Image" id="me"/></a>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p id="go">Go to 'About Me' page or just click the image above to get my brief informations!</p>
+                  </div>
+                </div>
+              </div>
+            </div> <!--end of 1st row-->
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-6 side_section">
+                <div class="row">
+                  <h2>Shortcuts</h2>
+                </div>
+                <div class="row">
+                  <ul>
+                    <a href="#first">
+                      <li>Hello, Coding Temple!</li>
+                    </a>
+                    <a href="#second">
+                      <li>Reason Why...</li>
+                    </a>
+                    <a href="#third">
+                      <li>My Backgrounds</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div> <!--end of 2nd row-->
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-6 side_section">
+                <div class="row">
+                  <h2>Social Media</h2>
+                </div>
+                <div class="row">
+                  <ul>
+                    <a href="https://www.linkedin.com/in/jamie-lee-36b5a411a/">
+                      <li>LinkedIn</li>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100008034032997">
+                      <li>Facebook</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div> <!--end of 3rd row-->
           </div>
         </div>
-        <div id="side_column">
-          <div class="side_section">
-            <h2>Me?</h2>
-            <a href="aboutMe.html"><img src="img/leej.jpg" id="me"/></a>
-            <p>Go to 'About Me' page or just click the image above to get my brief informations!</p>
-          </div>
-          <div class="side_section">
-            <h2>Shortcuts</h2>
-            <ul>
-              <a href="#first"><li>Hello, Coding Temple!</li></a>
-              <a href="#second"><li>Reason Why...</li></a>
-              <a href="#third"><li>My Backgrounds</li></a>
-            </ul>
-          </div>
-          <div class="side_section">
-            <h2>Social Media</h2>
-            <ul>
-              <a href="https://www.linkedin.com/in/jamie-lee-36b5a411a/"><li>LinkedIn</li></a>
-              <a href="https://www.facebook.com/profile.php?id=100008034032997"><li>Facebook</li></a>
-            </ul>
-          </div>
-        </div>
-      </div>
+    </main>
+
+    <!-- Bootstrap 4.1.0 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- AJAX CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/page1.css"/>
   </body>
 </html>

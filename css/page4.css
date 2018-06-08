@@ -1,0 +1,56 @@
+@import "basic.css";
+
+* {margin: 0; padding: 0;}
+body {background-color: #ddd;}
+header {
+  padding: 0;
+  background-color: rgba(255,255,255,0.7);
+}
+
+header h1 {padding: 35px 0;}
+
+nav {
+  background-color: #333;
+  width: 100%;
+  overflow: auto;
+}
+nav ul {margin: 0 10px;}
+nav ul li {
+  float: left;
+  list-style: none;
+  padding: 10px;
+  font-size: 18px;
+}
+nav a {text-decoration: none; color: #fff;}
+nav a:hover {color: #ccc;}
+
+#container {margin: 0 auto; text-align: center;}
+#container h3 {margin: 30px 0; color: navy;}
+#container label {
+  font-size: 20px;
+}
+#container input {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 50%;
+  height: 25px;
+  padding: 5px;
+}
+#container textarea {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 50%;
+  height: 150px;
+  padding: 5px;
+}
+
+.signin-box {
+  background-color: #fffeed;
+  border: 1px solid #aaa;
+  border-radius: 0.25em;
+  padding: 10px 20px;
+}
+
+input[type="submit"] {
+  background-color: #ffb028;
+}

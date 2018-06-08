@@ -2,163 +2,93 @@
 <html>
   <head>
     <title>Jamie in Coding Temple</title>
-    <style>
-      * {margin: 0; padding: 0;}
-      body {background-color: #fffbf4;}
-      header {
-        text-align: center;
-        width: 98%;
-        margin: 9px auto;
-        padding: 35px 0;
-        font-family: 'Metropolis 1920';
-        font-style: italic;
-        color: indianred;
-      }
-      nav {
-        border-top: 2px solid indianred;
-        border-bottom: 2px solid indianred;
-        width: 100%;
-        overflow: auto;
-      }
-      nav ul {margin: 0 10px;}
-      nav ul li {
-        float: left;
-        list-style: none;
-        padding: 10px;
-        font-size: 18px;
-        font-family: 'Metropolis 1920';
-        color: #555;
-      }
-      nav a {text-decoration: none; color: #777; transition: opacity 0.2s ease;}
-      nav a:hover {opacity: 0.2;}
-      #more {float: right;}
-
-      #container {
-        margin: 20px auto;
-        width: 95%;
-        overflow-y: auto;
-      }
-
-      .hobby {
-        margin: 15px;
-        border: 1px solid indianred;
-        width: 31%; height: 360px;
-        float: left;
-        position: relative;
-        overflow: hidden;
-        padding-bottom: 10px;
-        transition: background-color 0.4s ease;
-        vertical-align: middle;
-      }
-      .hobby:hover {background-color: indianred;}
-
-      .hobby h2 {
-        font-family: 'Ostrich Sans Heavy';
-        text-align: center;
-        margin: 18px auto;
-        color: indianred;
-      }
-      .hobby p {
-        margin: 6px 0 6px 5px;
-        color: #fffbf4;
-        position: absolute;
-        top:50%;
-        transform: translateY(-50%);
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-    </style>
   </head>
   <body>
-      <header>
-        <h1>Jamie Lee</h1>
-      </header>
-      <nav>
-        <ul>
-          <a href="../index.html"><li>Coding Temple</li></a>
-          <a href="aboutMe.html"><li>About Me</li></a>
-          <a href="myHobbies.html"><li>My Hobbies</li></a>
-          <a href="wannaMore.html"><li id="more">Wanna More?</li></a>
-        </ul>
-      </nav>
-      <div id="container">
-        <div class="hobby">
-          <h2>Reading Books</h2>
-          <p>
-            &nbsp;There would be 2 big categories of my reading: the first is about
-            traveling. From since when I was young, I was deeply interested in somewhat
-            cultural anthropologic things and that led me to make dreams of traveling
-            all around the world. So reading books of countries I wanna travel one day
-            just by myself such as Honk Kong, Singapore, Northwestern Europe, etc.<br>
-            &nbsp;Also, I'm quite interested in reading books of animals, especially pets.
-            I love animals so wanna have it as my family but my parents really hate. So,
-            beacuse of it, I'm just reading about them instead of having real one but
-            thinking of having it in real one day. Either cats or dogs are all okay with me.
-          </p>
+    <div class="row">
+      <div class="col-md-12">
+        <header>
+          <div class="col-md-12">
+            <h1>Jamie Lee</h1>
+          </div>
+          <nav class="navbar navbar-expand-sm">
+          <!-- Links -->
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item">
+               <a class="nav-link" href="../index.html">Coding Temple</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="aboutme.html">About Me</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">My Hobbies</a>
+             </li>
+           </ul>
+           <ul class="navbar-nav ml-auto">
+             <li class="nav-item push-right" id="more">
+               <a class="nav-link" href="wannaMore.html">Wanna More?</a>
+             </li>
+           </ul>
+          </nav>
+        </header>
+      </div> <!--end of col-md-12 row-->
+    </div> <!--end of nav-->
+
+    <main>
+      <div class="container">
+        <div class="row extra-margin" id="odd">
+          <div class="col-md card">
+            <h3 class="card-title">Reading Books</h3>
+            <p class="card-text">
+              &nbsp;There would be 2 big categories of my reading: the first is about traveling. From since when I was young, I was deeply interested in somewhat cultural anthropologic things and that led me to make dreams of traveling all around the world. So reading books of countries I wanna travel one day just by myself such as Honk Kong, Singapore, Northwestern Europe, etc.<br> &nbsp;Also, I'm quite interested in reading books of animals, especially pets. I love animals so wanna have it as my family but my parents really hate. So, beacuse of it, I'm just reading about them instead of having real one but thinking of having it in real one day. Either cats or dogs are all okay with me.
+            </p>
+          </div>
+          <div class="col-md card">
+            <h3 class="card-title">Watching Youtube</h3>
+            <img src="http://placehold.it/200x200" class="center card-img-top" alt="Image"/>
+            <p class="card-text">
+              &nbsp;My best no.1 pastime nowdays. Subjects I watch is really diverse. It can be about makeups, pet channels, cooking, learning languages (usually English), or even just listening to music.<br> &nbsp;These days I'm really interested in searching and watching videos about DMV just since after when I recently visited RMV. It really sucks, lol.
+            </p>
+          </div>
+          <div class="col-md card">
+            <h3 class="card-title">Listening to Music</h3>
+            <p class="card-text">
+              &nbsp;When I am happy, when I am sad, when I need some concentration, or either when I need some my own time, anytime I need music with every kind of situations.<br> &nbsp;Actually, I don't know the music well professionally, but anyway when I think of myself, probably I used to like kinda house music and electronic. Also, and Even more about instrumental musics. It can be from soundtracks from games, movies or even TV shows to originally composed in online like YouTube or Soundcloud.<br> &nbsp;My favorite artists would be, for example, Owl City and Audiomachine. Owl City is usually for electronic, but the common thing is they're good at composing instrumentals.
+            </p>
+          </div>
         </div>
-        <div class="hobby">
-          <h2>Listening to Music</h2>
-          <p>
-            &nbsp;When I am happy, when I am sad, when I need some concentration, or either
-            when I need some my own time, anytime I need music with every kind of situations.<br>
-            &nbsp;Actually, I don't know the music well professionally, but anyway when I think of
-            myself, probably I used to like kinda house music and electronic. Also,
-            And Even more about instrumental musics. It can be from soundtracks from
-            games, movies or even TV shows to originally composed in online like YouTube or
-            Soundcloud.<br>
-            &nbsp;My favorite artists would be, for example, Owl City and Audiomachine.
-            Owl City is usually for electronic,
-            but the common thing is they're good at composing instrumentals.
-          </p>
-        </div>
-        <div class="hobby">
-          <h2>Learning Foreign Languages</h2>
-          <p>
-            &nbsp;I like global things like cultural anthropology or traveling around,
-            or even it can be used in languages.<br>
-            &nbsp;I already speak 3 languages - Korean, English, Japanese. Korean is my mother
-            tongue, learned English since I was very young, and started to learn Japanese
-            since when I was in high school. I think my Japanese is much more fluent than
-            my English. Well, just kidding.<br>
-            &nbsp;And thinking of learning 3 more languages from now on like German, Chinese
-            and Spanish. I already took basic German class when I was in college but wanna
-            learn more personally. And Chinese and Spanish are beacuse I felt some necessity
-            of learning those languages after arriving U.S.
-          </p>
-        </div>
-        <div class="hobby">
-          <h2>Watching Youtube</h2>
-          <p>
-            &nbsp;My best no.1 pastime nowdays. Subjects I watch is really diverse.
-            It can be about makeups, pet channels, cooking, learning languages (usually English),
-            or even just listening to music.<br>
-            &nbsp;These days I'm really interested in searching and watching videos about DMV
-            just since after when I recently visited RMV. It really sucks, lol.
-          </p>
-        </div>
-        <div class="hobby">
-          <h2>Playing Games</h2>
-          <p>
-            &nbsp;I used to like playing games since when I was young, so until when I was in
-            college sophomore, I dreamed of being game developer.<br>
-            &nbsp;Unfortunately, I lost most or my interests about games even though I made
-            a game for my graduate project, but still doing a video game on my laptop called
-            "The Sims 4". It's really cool for time killing.
-          </p>
-        </div>
-        <div class="hobby">
-          <h2>Walking around</h2>
-          <p>
-            &nbsp;When I lived in Korea, I really loved walking around my town alone, especially
-            in late night. Walking late gave me lots of silence and that made me much more
-            concentrated to myself.<br>
-            It's really sad that I can't walk late in America because of danger. Anyway,
-            beacuse of my memory before, I really love walking in downtown filled with skyscrapers
-            and that makes me feel alive.
-          </p>
+        <div class="row extra-margin" id="even">
+          <div class="col-md card">
+            <h3 class="card-title">Playing Games</h3>
+            <img src="http://placehold.it/200x200" class="center card-img-top" alt="Image"/>
+            <p class="card-text">
+              &nbsp;I used to like playing games since when I was young, so until when I was in college sophomore, I dreamed of being game developer.<br> &nbsp;Unfortunately, I lost most or my interests about games even though I made a game for my graduate project, but still doing a video game on my laptop called "The Sims 4". It's really cool for time killing.
+            </p>
+          </div>
+          <div class="col-md card">
+            <h3 class="card-title">Learning Languages</h3>
+            <p class="card-text">
+              &nbsp;I like global things like cultural anthropology or traveling around, or even it can be used in languages.<br> &nbsp;I already speak 3 languages - Korean, English, Japanese. Korean is my mother tongue, learned English since I was very young, and started to learn Japanese since when I was in high school. I think my Japanese is much more fluent than my English. Well, just kidding.<br> &nbsp;And thinking of learning 3 more languages from now on like German, Chinese and Spanish. I already took basic German class when I was in college but wanna learn more personally. And Chinese and Spanish are beacuse I felt some necessity of learning those languages after arriving U.S.
+            </p>
+          </div>
+          <div class="col-md card">
+            <h3 class="card-title">Walking around</h3>
+            <img src="http://placehold.it/200x200" class="center card-img-top" alt="Image"/>
+            <p class="card-text">
+              &nbsp;When I lived in Korea, I really loved walking around my town alone, especially in late night. Walking late gave me lots of silence and that made me much more concentrated to myself.<br> It's really sad that I can't walk late in America because of danger. Anyway, beacuse of my memory before, I really love walking in downtown filled with skyscrapers and that makes me feel alive.
+            </p>
+          </div>
         </div>
       </div>
+    </main>
+
+    <!-- Bootstrap 4.1.0 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- AJAX CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/page3.css"/>
   </body>
 </html>
